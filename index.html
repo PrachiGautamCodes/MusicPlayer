@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="player">
+    <div class="header">
+      Music <span>Player</span>
+    </div>
+
+    <div class="img">
+      <img decoding="async" src="" id="thumb" alt="Song thumbnail">
+    </div>
+
+    <div class="details">
+      <h3 id="title"></h3>
+      <p id="musician"></p>
+    </div>
+
+    <audio id="song"></audio>
+
+    <div class="time">
+      <span id="start">0:00</span>
+      <span id="end">4:33</span>
+    </div>
+
+    <input type="range" id="progress" value="0" min="0" max="100">
+
+    <div class="action">
+      <button id="prev">
+        <i class="bx bx-skip-previous"></i>
+      </button>
+
+      <button class="play" id="play">
+        <i class="bx bx-play"></i>
+      </button>
+
+      <button id="next">
+        <i class="bx bx-skip-next"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
